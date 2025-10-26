@@ -1,0 +1,106 @@
+/* ... (كود CSS السابق حتى الأجزاء العامة) ... */
+
+/* ------------------ تنسيق صفحة الرسالة (message.html) - تصميم مبدع ------------------ */
+
+.message-page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px; 
+    
+    /* خلفية متدرجة أعمق وأكثر سماوية */
+    background: linear-gradient(180deg, #0e0225, #000000); 
+}
+
+.message-card {
+    /* تغيير لون البطاقة لتبدو شفافة ومظلمة أكثر */
+    background-color: rgba(10, 5, 25, 0.85); 
+    color: #f0e6ff; /* لون نص فاتح وناعم */
+    padding: 60px;
+    border-radius: 25px;
+    
+    /* توهج أعمق للبطاقة (أزرق - وردي - أبيض) */
+    box-shadow: 
+        0 0 30px rgba(102, 204, 255, 0.2), /* توهج أزرق ناعم */
+        0 0 80px rgba(255, 153, 204, 0.2), /* توهج وردي خفيف */
+        0 15px 70px rgba(0, 0, 0, 0.9);    
+        
+    max-width: 800px;
+    margin: auto; 
+    position: relative;
+    z-index: 10;
+    
+    direction: ltr; 
+    text-align: left; 
+    
+    /* إطار ناعم متوهج */
+    border: 1px solid rgba(200, 200, 255, 0.1);
+    transition: transform 0.5s ease-out;
+}
+
+.message-card:hover {
+    transform: translateY(-5px); /* حركة خفيفة عند مرور الماوس */
+}
+
+.message-header {
+    border-bottom: 1px solid #3a3a50; 
+    padding-bottom: 25px; /* مسافة أكبر */
+    margin-bottom: 35px; /* مسافة أكبر */
+}
+
+/* تنسيق العنوان (الجملة الجديدة) */
+.message-card .greeting {
+    color: #b3ccff; /* لون أزرق سماوي فاتح */
+    font-size: 2.8em; /* حجم أصغر قليلاً ليناسب الجملة الطويلة */
+    font-weight: 600;
+    margin-top: 10px;
+    
+    /* توهج مميز للعنوان */
+    text-shadow: 
+        0 0 10px #66ccff, 
+        0 0 20px rgba(179, 204, 255, 0.7),
+        0 0 5px rgba(255, 255, 255, 0.5); 
+}
+
+.message-card .meta-data {
+    color: #9999ff; /* لون بنفسجي ناعم */
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.message-card .message-content p {
+    font-size: 1.15em; /* خط أرق قليلاً */
+    color: #f0e6ff; 
+    text-align: justify; 
+    margin-bottom: 1.6em;
+    line-height: 1.9;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.message-footer {
+    border-top: 1px solid #3a3a50; 
+    padding-top: 25px;
+    margin-top: 35px;
+    color: #9999ff;
+    font-size: 0.95em;
+    line-height: 1.6;
+    text-align: right; /* جعل التوقيع على اليمين للتميز */
+}
+
+/* تنسيق التوقيع (يشمل الجملة الجديدة "I wish you a better life") */
+.message-card .signature {
+    color: #ff99cc; /* لون وردي عميق ومميز */
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 15px;
+    display: block; 
+    
+    /* توهج خفيف للتوقيع */
+    text-shadow: 0 0 8px rgba(255, 153, 204, 0.7);
+}
+
+
+/* ... (بقية كود CSS كما هو، يشمل تنسيق زر العودة وتنسيق الهاتف) ... */
